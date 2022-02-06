@@ -11,20 +11,34 @@ public class FloatingPointNumber {
         Double value = input.nextDouble();
 
         if (value == 0) {
-            if (Math.abs(value) < 1)
-            System.out.println("The value is zero and small number");
-            else
-                System.out.println("The value is zero and large number");
+            System.out.println("The value is zero");
         }
-        else if (value > 0) {
-            if (Math.abs(value) > 1_000_000)
-            System.out.println("The value is positive and large number");
-            else
+
+        else if (Math.abs(value) < 1) {
+            if (value < 1)
+                if (value > 0)
                 System.out.println("The value is positive and small number");
-       }
-        else {
-            System.out.println("The value is negative and small number");
+            else
+                System.out.println("The value is negative and small number");
         }
+
+        else if (Math.abs(value) > 1_000_000) {
+            if (value > 1_000_000)
+                    System.out.println("The value is positive and large number");
+            else
+                System.out.println("The value is negative and large number");
+        }
+
+        else if (value > 1) {
+            if (value < 1_000_000)
+                System.out.println("The value is positive");
+        }
+
+        else if (value < -1) {
+            if (value > -1_000_000)
+                System.out.println("The value is negative");
+          }
+
         input.close();
     }
 }
