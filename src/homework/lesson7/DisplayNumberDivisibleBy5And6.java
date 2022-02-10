@@ -17,4 +17,3 @@ public class DisplayNumberDivisibleBy5And6 {
         }
     }
 }
-
