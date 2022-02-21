@@ -14,11 +14,10 @@ public class SummingTwoNumbers {
             System.out.println("Sum of number is:" + " " + sum);
             System.out.println("Your operation was successful!");
             System.out.println("You want to perform the operation again? Indroduce yes/no:" + " ");
-            String stop = input.next(); {
-                if (stop.equals("no"))
-                    break;
-                continue;
-            }
+            String stop = input.next();
+
+            if (stop.equals("no"))
+                break;
         }
         while (true); {
             System.out.println ("Your operation has ended! Thank you!");
