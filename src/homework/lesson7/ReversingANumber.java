@@ -8,15 +8,12 @@ public class ReversingANumber {
         System.out.println("Enter the number:");
         int intNumber = input.nextInt();
         while (intNumber <= 10) {
+            if (intNumber%10 == 0)
             System.out.println("The number cannot be reversed:");
             System.out.println("Introduce again:" + " ");
             intNumber = input.nextInt();
         }
-        while (intNumber%10 ==0) {
-            System.out.println("The number cannot be reversed:");
-            System.out.println("Introduce again:" + " ");
-            intNumber = input.nextInt();
-        }
+
         System.out.println("The revers is:" + " ");
         do {
             System.out.print(intNumber % 10);
