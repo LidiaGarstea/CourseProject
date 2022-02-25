@@ -15,6 +15,7 @@ public class ParkingCharges {
     public double getClientCharge () {
         return clientCharge;
     }
+
     public void calculateCharges () {
         if (parkedHours == 24) {
             clientCharge = costMax;
@@ -28,6 +29,7 @@ public class ParkingCharges {
             clientCharge = hoursAdditional * costAdditional + costMin;
         }
     }
+
     public static double calculateTotalProfit (ParkingCharges [] clients) {
         double sum = 0;
         for (ParkingCharges client : clients) {

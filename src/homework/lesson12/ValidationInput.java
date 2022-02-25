@@ -8,6 +8,7 @@ public class ValidationInput {
     public ValidationInput () {
         scanner = new Scanner(System.in);
     }
+
     public static int intInput() {
         int intInput = scanner.nextInt();
         while (intInput < 0) {

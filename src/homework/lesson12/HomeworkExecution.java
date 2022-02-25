@@ -3,6 +3,7 @@ package homework.lesson12;
 public class HomeworkExecution {
     public static void main (String [] args) {
         ValidationInput validationInput = new ValidationInput();
+
         while (true) {
             int k;
             System.out.println("-------------------------------------------------------------------------------------------");

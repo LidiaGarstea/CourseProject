@@ -6,6 +6,4 @@ public class VoidPrimeNumber {
         int counting = PrimeNumbers.getCountPrimeNumbers(0, 10000);
         System.out.println("The number of all prime numbers less than 10.000: " + counting );
     }
-
-
 }
